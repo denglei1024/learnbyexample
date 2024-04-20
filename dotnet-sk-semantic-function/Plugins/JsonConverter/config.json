@@ -1,0 +1,26 @@
+﻿{
+  "schema": 1,
+  "type": "completion",
+  "description": "基于 JSON 文档生成数据模型",
+  "completion": {
+    "max_tokens": 8000,
+    "temperature": 0.1,
+    "top_p": 0.0,
+    "presence_penalty": 0.0,
+    "frequency_penalty": 0.0
+  },
+  "input": {
+    "parameters": [
+      {
+        "name": "language",
+        "description": "基于 JSON 文档生成数据模型的编程语言",
+        "defaultValue": "Java"
+      },
+      {
+        "name": "content",
+        "description": "要转换的 JSON 文档内容",
+        "defaultValue": ""
+      }
+    ]
+  }
+}
