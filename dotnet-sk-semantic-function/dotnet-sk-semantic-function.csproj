@@ -14,4 +14,16 @@
     <PackageReference Include="Microsoft.SemanticKernel.Core" Version="1.7.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="Plugins\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Plugins\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Plugins\**" />
+  </ItemGroup>
+
 </Project>
