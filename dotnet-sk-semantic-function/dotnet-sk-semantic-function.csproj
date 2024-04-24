@@ -15,15 +15,33 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Remove="Plugins\**" />
+    <EmbeddedResource Include="Plugins\ExercisePlugins\GetExercise\config.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\ExercisePlugins\GetExercise\skprompt.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\ExercisePlugins\SuggestExercise\config.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\ExercisePlugins\SuggestExercise\skprompt.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\ConverterPlugin\Json2Model\config.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plugins\ConverterPlugin\Json2Model\skprompt.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Remove="Plugins\ExercisePlugins\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Remove="Plugins\**" />
+    <Compile Remove="Plugins\ExercisePlugins\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="Plugins\**" />
+    <None Remove="Plugins\ExercisePlugins\**" />
   </ItemGroup>
 
 </Project>

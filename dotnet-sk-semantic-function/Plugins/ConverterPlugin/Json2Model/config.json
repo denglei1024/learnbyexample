@@ -1,0 +1,18 @@
+﻿{
+  "schema": 1,
+  "type": "completion",
+  "description": "将JSON文档转换为指定语言的数据模型",
+  "execution_settings": {
+    "default": {
+      "max_tokens": 1200,
+      "temperature": 0.8
+    }
+  },
+  "input_variables": [
+    {
+      "name": "input",
+      "description": "用户输入的JSON文档",
+      "required": true
+    }
+  ]
+}
