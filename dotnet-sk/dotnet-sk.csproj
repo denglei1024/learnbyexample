@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>dotnet_sk</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.KernelMemory.Core" Version="0.38.240423.1" />
+    <PackageReference Include="Microsoft.SemanticKernel" Version="1.9.0" />
+    <PackageReference Include="Microsoft.SemanticKernel.Planners.Handlebars" Version="1.9.0-preview" />
+  </ItemGroup>
+
+</Project>
